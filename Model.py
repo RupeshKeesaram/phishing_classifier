@@ -15,7 +15,7 @@ y_data= y_data.drop("Unnamed: 0",axis=1)
 
 x_train,x_test,y_train,y_test = train_test_split(x_data,y_data,random_state=1,test_size=0.2)
 
-file_name = "finalized_model.sav"
+file_name = "finalized_model1.sav"
 model = pickle.load(open(file_name,"rb"))
 
 #print(x_data.columns)
