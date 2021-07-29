@@ -36,7 +36,7 @@ def prediction():
     if form.is_submitted():
         data = list(request.form.values())[:-1]
         data = model.predict(np.array([data]))
-        return render_template("Result.html",data =1)
+        return render_template("Result.html",data =data)
     return render_template("Prediction.html",form=form)
 
 
