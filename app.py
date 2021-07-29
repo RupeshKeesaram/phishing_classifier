@@ -40,4 +40,4 @@ def prediction():
     return render_template("Prediction.html",form=form)
 
 
-app.run()
+app.run(port=5000)
