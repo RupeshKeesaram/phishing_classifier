@@ -33,7 +33,7 @@ body {
 {
     width:100px;
     height:100px;
-    background:url("static/Rupesh.JPEG");
+    background:url("../static/Rupesh.JPEG");
     background-repeat:no-repeat;
     background-size:cover;
     border-radius:50%;
