@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    <title></title>
+    {% endblock title %}
+    {% block link %}
+    <link href="{{ url_for('static',filename='style.css') }}" rel="stylesheet" type="text/css">
+    {% endblock link %}
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+<body>
+    {% block content %}
+    {% endblock content %}
+    <footer class="footer">
+        <b style="color:#1423F4">ABOUT DEV : </b>
+        <a href="https://www.linkedin.com/in/rupesh-keesaram/">RUPESH KEESARAM</a>
+    </footer>
+</body>
+</html>

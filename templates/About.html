@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block title %}
+    <title>About</title>
+{% endblock title %}
+
+{% block link %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='about.css') }}">
+{% endblock link %}
+
+{% block content %}
+    <div class="container">
+
+        <center>
+            <h1>ABOUT DEV</h1>
+            <div class="img"></div>
+            <p>
+                Hello all, this is <a href="https://www.linkedin.com/in/rupesh-keesaram/"><b>Rupesh Keesaram</b></a>
+                currently persuing Btech 3<sup>rd</sup> year in the stream of computer science and Engineering.
+                This project <a href="home">PHISHING URL DETECTOR</a> is done as a part of my internship
+                at <a href="https://www.consolelancer.com/">CONSOLE LANCER</a>.
+            </p>
+            <button class="btn">VIEW MORE</button>
+        </center>
+    </div>
+{% endblock content %}

@@ -1,0 +1,88 @@
+/* ############# DEFAULT STYLES ################## */
+
+nav,header,footer
+{
+    display:block;
+}
+
+
+body
+{
+    line-height:1;
+    margin:0;
+    background-image:url("homepage.PNG")
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+}
+
+.footer a{
+text-decoration:none;
+}
+
+/* ############# NAV BAR ################## */
+
+nav{
+    width: 100%;
+    margin: 0;
+    overflow:auto;
+}
+
+
+nav ul{
+    background-color:#AEBCC1;
+    overflow:hidden;
+    margin:0;
+    padding:0;
+}
+
+
+nav ul.topnav li{
+    list-style:none;
+    float:left;
+}
+
+
+ul.topnav li.topnav-right{
+    float:right;
+}
+
+
+ul.topnav li a img{
+background-color:none;
+}
+ul.topnav li a{
+    color:#0E25F3 ;
+    display:block;
+    max-height:15px;
+    padding:15px;
+    margin:10px;
+    border-radius:50%;
+    text-decoration:none;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+nav ul.topnav li a:hover
+{
+    background-color:#94EADD;
+    color:red;
+}
+
+
+nav ul.topnav li img{
+    max-width:25px;;
+    height:auto;
+    border-radius:50%;
+    overflow:hidden;
+    display:block;
+    float:center;
+}
+
+/* ############# NAV BAR ################## */

@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block link %}
+    <link href="{{ url_for('static',filename='prediction.css') }}" rel="stylesheet"  type="text/css">
+    <script src="{{url_for('static',filename='prediction.js') }}" rel="script"></script>
+{% endblock link %}
+{% block content %}
+    <div class="container">
+        <h1>PHISHING URL DETECTOR</h1>
+        <center>
+            <a href="#"><image src="static/phising.JPG" alt="Phising Image"></image></a>
+        </center>
+    </div>
+    <br>
+    <br>
+    <form method="POST">
+    <table align="center">
+        <tr>
+        <td>{{form.SFH.label}} :
+            {{form.SFH}}</td>
+        <td>{{form.POPUP_WINDOW.label}} :
+            {{form.POPUP_WINDOW}}</td>
+        <td>{{form.SSL.label}} :
+            {{form.SSL}}</td></tr>
+        <tr><td>{{form.REQUEST_URL.label}} :
+            {{form.REQUEST_URL}}</td>
+            <td>{{form.URL_OF_ANCHOR.label}} :
+            {{form.URL_OF_ANCHOR}}</td>
+            <td>{{form.WEB_TRAFFIC.label}} :
+                {{form.WEB_TRAFFIC}}</td></tr>
+        <tr><td>{{form.URL_LENGTH.label}} :
+            {{form.URL_LENGTH}}</td>
+        <td>{{form.AGE_OF_DOMAIN.label}} :
+            {{form.AGE_OF_DOMAIN}}</td>
+        <td>{{form.HAVING_IP_ADDRESS.label}} :
+            {{form.HAVING_IP_ADDRESS}}</td></tr>
+    </table>
+        <div class="button">{{ form.SUBMIT() }}</div>
+    </form>
+{% endblock content %}

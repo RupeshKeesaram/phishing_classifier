@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{{ url_for('static',filename='result.css') }}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    {% if data ==-1 %}
+    <div class="container">
+        <center>
+            <img class="img" src="static/phishing_icon.JPG" alt="DETECTIVE IMAGE">
+            <h1 style="color:red">Be CareFull, It looks like a PHISHING URL !!</h1>
+        </center>
+    </div>
+    {% elif data==0 %}
+    <div class="container">
+        <center>
+            <img class="img" src="static/suspicious.JPG" alt="DETECTIVE IMAGE">
+            <h1 style="color:#E523DE">Looking Suspicious, Be attentive !!</h1>
+        </center>
+    </div>
+    {% else %}
+    <div class="container">
+        <center>
+            <img class="img" src="static/legitimate.JPG" alt="DETECTIVE IMAGE">
+            <h1 style="color:green">Hey Cool, it's a Legitimate URL :)</h1>
+        </center>
+    </div>
+    {% endif %}
+    <br>
+    <br>
+    <footer class="footer">
+        <b style="color:black">ABOUT DEV : </b>
+        <a href="https://www.linkedin.com/in/rupesh-keesaram/">RUPESH KEESARAM</a>
+    </footer>
+</body>
+</html>

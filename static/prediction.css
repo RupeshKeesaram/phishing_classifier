@@ -1,0 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+body{
+    background-image: url("prediction_background.JPG");
+    background-repeat:np-repeat;
+    background-size:cover;
+}
+
+
+div.container h1{
+    font-family: 'Pirata One', cursive;
+    text-align:center;
+    letter-spacing:5px;
+    color:#4CC1F6;
+}
+
+
+div.container img
+{
+    border:2px dotted #EC5880;
+    border-radius:5%;
+    align:center;
+}
+
+table
+{
+border-spacing:2rem;
+padding:0.5rem;
+}
+
+td{
+padding:0.5rem;
+color:red;
+}
+
+.button{
+width:100px;
+margin-left:50%;
+}

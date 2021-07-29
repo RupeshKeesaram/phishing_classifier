@@ -1,0 +1,79 @@
+body {
+    margin:0;
+    padding:0;
+    background-color:#B2E3EC;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:300px 150px;
+}
+
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 6%;
+   width: 100%;
+   color: white;
+   text-align: center;
+}
+
+.container
+{
+    height:75vh;
+    width:30%;
+    background:rgba(0,0,0,.6);
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    padding:0 20px;
+}
+
+.img
+{
+    width:100px;
+    height:100px;
+    background:url("Rupesh.JPEG");
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-radius:50%;
+    position:absolute;
+    top:0%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.container h1{
+ color:#BEDEDE;
+ margin-top:50px;
+}
+
+.container p{
+    color:white;
+    font-size:large;
+    margin-top:60px;
+    line-height:30px;
+}
+
+
+.container p a{
+   text-decoration:none;
+   color:#72BFF2;
+}
+
+.btn{
+    background:no-repeat;
+    outline:none;
+    border:3px solid red;
+    border-radius:5%;
+    cursor:pointer;
+    color:#E2D91C;
+    padding:7px 15px;
+}
+
+.btn:hover
+{
+    background:black;
+    color:white;
+}
+

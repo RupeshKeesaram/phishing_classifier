@@ -1,0 +1,23 @@
+body{
+background-color:#73CFF9;
+}
+
+div.container h1{
+    font-family: 'Pirata One', cursive;
+    text-align:center;
+    letter-spacing:5px;
+    color:#4CC1F6;
+}
+
+div.container img
+{
+    border:2px dotted #EC5880;
+    border-radius:5%;
+    align:center;
+}
+
+
+.footer
+{
+text-align:center;
+}
