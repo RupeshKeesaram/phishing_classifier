@@ -2,10 +2,10 @@ from flask import Flask,render_template,url_for,request,redirect
 from prediction import PredictionForm
 from Model import model
 import numpy as np
-
-
+import os
 import warnings
 warnings.filterwarnings("ignore")
+
 
 
 app = Flask(__name__)
@@ -40,4 +40,7 @@ def prediction():
     return render_template("Prediction.html",form=form)
 
 
-app.run(port=5000)
+
+
+port = int(os.environ.get("PORT", 5000))
+app.run(debug=True, host='127.0.0.1', port=port)
