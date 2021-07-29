@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
 
 body{
-    background-image: url("prediction_background.JPG");
+    background-image: url("templates/prediction_background.JPG");
     background-repeat:np-repeat;
     background-size:cover;
 }
